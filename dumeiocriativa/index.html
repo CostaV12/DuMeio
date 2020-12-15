@@ -36,35 +36,28 @@
 </head>
 
 <body>
-
-  <!-- ======= Barra do início da página que mostra o horário de funcionamento e o telefone ======= -->
-  <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
-      <div class="d-flex align-items-center">
-        <i class="icofont-clock-time"></i> Segunda à sexta, das 08h00 às 18h00.
-      </div>
-      <div class="d-flex align-items-center">
-        <i class="icofont-phone"></i> (11) 94510 - 5879
-      </div>
-    </div>
-  </div> <!-- =======Fim do código da barra superior======= -->
  
   <!-- ======= Código do menu ======= -->
   <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center">
-
-      <a href="index.html" class="logo mr-auto"><img src="assets/img/Logo dumeio_png2.png" alt=""></a> <!-- logo que aparece no menu -->
-      <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="index.html">Home</a></li> <!-- o active faz com que a página home seja a principal quando carregar o site-->
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#services">Serviços</a></li>
-
-        </ul>
-      </nav><!-- fim da tag nav -->
-
-      <a href="#contact" class="appointment-btn scrollto"><span class="d-none d-md-inline">Fale</span> Conosco</a> <!-- Essa classe deixa o botão de 'fale conosco' diferenciado dos demais-->
-
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-xl-10 d-flex align-items-center">
+          <h1 class="logo mr-auto"><img src="assets/img/Logo dumeio_png2.png" alt=""><a href="index.html">  Dumeiocriativa<span>.</span></a></h1>
+          
+  
+          <nav class="nav-menu d-none d-lg-block">
+            <ul>
+              <li class="active"><a href="#header">Home</a></li>
+              <li><a href="#about">Sobre</a></li>
+              <li><a href="#services">Serviços</a></li>
+              <li><a href="#gallery">Portifólio</a></li>
+            </ul>
+          </nav><!-- .nav-menu -->
+  
+          <a href="#contact" class="get-started-btn scrollto">Orçamento</a>
+        </div>
+      </div>
+  
     </div>
   </header><!-- =======Fim do código do menu ======= -->
 
@@ -78,28 +71,52 @@
 
         <!-- Slide 1 -->
         <div class="carousel-item active" style="background-image: url(assets/img/1.png)"> <!-- carrousel -->
-          <div class="container">
-            <h2>Bem-vindo(a) a <span>Dumeiocriativa</span></h2>
-            <p>Visualize nossos produtos e peça agora o orçamento.</p>
-            <a href="#about" class="btn-get-started scrollto">Conheça</a> <!-- botão que leva para a sessão sobre-->
+          <div class="container-fluid" data-aos="zoom-out" data-aos-delay="100">
+            <div class="row justify-content-center">
+              <div class="col-xl-10">
+                <div class="row">
+                  <div class="col-xl-5">
+                    <h1>Bem-vindo(a) a <span>Dumeiocriativa</span></h2>
+                    <h2>Conheça quem somos e um pouco do que fazemos</h2>
+                    <a href="#sobre" class="btn-get-started scrollto">Saiba mais</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
         <!-- Slide 2 -->
         <div class="carousel-item" style="background-image: url(assets/img/2.png)"> <!-- carrousel -->
-          <div class="container">
-            <h2>Serviços prestados</h2>
-            <p>Confira nosso catálogo para ter acesso aos nossos serviços e produtos. </p>
-            <a href="#services" class="btn-get-started scrollto">Nossos serviços</a> <!-- botão que leva para a sessão 'serviços'-->
+          <div class="container-fluid" data-aos="zoom-out" data-aos-delay="100">
+            <div class="row justify-content-center">
+              <div class="col-xl-10">
+                <div class="row">
+                  <div class="col-xl-5">
+                    <h1>Conheça nossas Redes Sociais</h2>
+                    <h2>Conheça um pouco mais da nossa equipe visitando nossas redes sociais</h1>
+                    <a href="https://linktr.ee/dumeiocriativa" class="btn-get-started scrollto">Visite</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
         <!-- Slide 3 -->
         <div class="carousel-item" style="background-image: url(assets/img/3.png)">
-          <div class="container">
-            <h2>Trabalho com excelência e qualidade</h2>
-            <p>Usamos material de qualidade e com rápida entrega</p>
-            <a href="#gallery" class="btn-get-started scrollto">Conheça nossos produtos</a> <!-- botão que leva para a sessão 'galeria'-->
+          <div class="container-fluid" data-aos="zoom-out" data-aos-delay="100">
+            <div class="row justify-content-center">
+              <div class="col-xl-10">
+                <div class="row">
+                  <div class="col-xl-5">
+                    <h1>Em Breve</h2>
+                    <h2>Logo mais estaremos disponibilizando compras pelo nosso site!</h1>
+                    <a href="#contact" class="btn-get-started scrollto">Faça um orçamento</a> <!-- botão que leva para a sessão 'orçamento'-->
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -107,7 +124,7 @@
 
       <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon icofont-simple-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>/
+        <span class="sr-only">Previous</span>
       </a>
 
       <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
@@ -120,48 +137,84 @@
 
   <main id="main">
 
-    <!-- ======= Código da sessão 'sobre nós'======= -->
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
-
+  
         <div class="section-title">
           <h2>Sobre Nós</h2>
           <p> A DuMeio é uma empresa que fornece produtos gráficos com um ótimo design</p>
         </div>
-
+  
         <div class="row">
           <div class="col-lg-6" data-aos="fade-right">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+            <img src="assets/img/Logo_dumeio.png" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left">
             <h3>DuMeio: o seu produto com o melhor design</h3>
             <p>
               A DuMeio nasceu em 2020 como uma empresa que atende serviços e produtos personalizados com um ótimo design e com alta qualidade.
             </p>
-            <p>Missão</p>
-            <ul>
-              <li><i class="icofont-check-circled"></i> Fornecer produtos gráficos de ótima qualidade e um design que atende as demandas de nossos clientes. Procuramos sempre entregar nossos produtos no menor tempo possível. </li>
-            </ul>
-            <p>Visão</p>
-            <ul>
-              <li><i class="icofont-check-circled"></i> Ser a melhor empresa gráfiaca de Guarulhos que entrega produtos e serviços gráficos persnoalizados </li> <!-- essa classe deixa um ícone de 'check', achei isso bem legal para citar a visão e os valores-->
-
-            </ul>
-            <p>Valores</p>
-            <ul>
-              <li><i class="icofont-check-circled"></i> Ética</li> 
-              <li><i class="icofont-check-circled"></i> Rapidez</li>
-              <li><i class="icofont-check-circled"></i> Qualidade</li>
-              <li><i class="icofont-check-circled"></i> Bom antendimento</li>
-            </ul>
+          
             
+          </div>
+        </div>
+  
+      </div>
+    </section>
+
+    <!-- ======= sobre Section ======= -->
+    <section id="sobre" class="about section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row no-gutters">
+          <div class="content col-xl-5 d-flex align-items-stretch">
+            <div class="content">
+              <h3>Conheça alguns dos conceitos que seguimos</h3>
+              <p>
+                Apenas um textinho aleatório para o campo não ficar vazio
+              </p>
+              <a href="#" class="about-btn"><span>Sobre nós</span> <i class="bx bx-chevron-right"></i></a>
+            </div>
+          </div>
+          <div class="col-xl-7 d-flex align-items-stretch">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <i class="icofont-favourite"></i>
+                  <h4>Nosso Diferencial</h4>
+                  <i class="icofont-check-circled"></i>Fazemos entregas rápidas, produtos de qualidade e focamos sempre no melhor design para os nossos clientes
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                  <i class="icofont-bullseye"></i>
+                  <h4>Missão</h4>
+                  <i class="icofont-check-circled"></i> Fornecer produtos gráficos de ótima qualidade e um design que atende as demandas de nossos clientes. Procuramos sempre entregar nossos produtos no menor tempo possível. </li>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <i class="icofont-eye"></i>
+                  <h4>Visão</h4>
+                  <i class="icofont-check-circled"></i> Ser a melhor empresa gráfiaca de Guarulhos que entrega produtos e serviços gráficos persnoalizados
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bx bx-shield"></i>
+                  <h4>Valores</h4>
+                  <ul>
+                    <i class="icofont-check-circled"></i> Ética
+                    <br/>
+                    <i class="icofont-check-circled"></i> Rapidez
+                    <br/>
+                    <i class="icofont-check-circled"></i> Qualidade
+                    <br/>
+                    <i class="icofont-check-circled"></i> Bom antendimento
+                  </ul>
+                </div>
+              </div>
+            </div><!-- End .content-->
           </div>
         </div>
 
       </div>
-    </section><!-- ======= Fim da sessão sobre nós ======= -->
+    </section><!-- End About Section -->
 
-    <!-- ======= Código da sessão 'serviços' ======= -->
     <section id="services" class="services services">
       <div class="container" data-aos="fade-up">
 
@@ -177,73 +230,73 @@
             <h4 class="title"><a href="">Nomes Personalizados</a></h4>
             <p class="description">Nomes personalizados em PVC expandido. Disponível em diferentes tamanhos com personagens e cores à escolha do cliente.</p>
             <br />
-            <a href="#contact" class="appointment-btn scrollto"><span class="d-none d-md-inline">Faça</span> um orçamento</a>
+            <a href="#" class="service-btn"><span>Faça um orçamento</span> <i class="bx bx-chevron-right"></i></a>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon"><i class="icofont-tag"></i></div>
             <h4 class="title"><a href="">Logos Personalizados</a></h4>
             <p class="description">Invista em seu logo e mostre o diferencial da sua empresa! Logo personalizado em PVC expandido. Disponivel em diferentes tamanhos com a arte escolhida pelo cliente.</p>
-            <a href="#contact" class="appointment-btn scrollto"><span class="d-none d-md-inline">Faça</span> um orçamento</a>
+            <a href="#" class="service-btn"><span>Faça um orçamento</span> <i class="bx bx-chevron-right"></i></a>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon"><i class="icofont-tag"></i></div>
             <h4 class="title"><a href="">Centros de mesa</a></h4>
             <p class="description">Centros de mesa persnoalizados em pvc expandido. DIsponível em diferentes tamanhos com personagens e cores à escolha do cliente.</p>
-            <a href="#contact" class="appointment-btn scrollto"><span class="d-none d-md-inline">Faça</span> um orçamento</a>
+            <a href="#" class="service-btn"><span>Faça um orçamento</span> <i class="bx bx-chevron-right"></i></a>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon"><i class="icofont-tag"></i></div>
             <h4 class="title"><a href="">Canecas Personalizadas</a></h4>
             <p class="description">Canecas personalizadas em porcelana branca com tamanho de 96X223mm. A estampa é feita de acordo com a escolha do cliente, sendo possível utilizar fotos.</p>
-            <a href="#contact" class="appointment-btn scrollto"><span class="d-none d-md-inline">Faça</span> um orçamento</a> <!-- Eu coloquei esse botão de orçamento pq achei legal. Obs: só tem que vem um jeito para eles ficarem retinhos caso o texto de do serviço 1 seja menor doq o texto do serviço 2, mas acho que é só colocar um br-->
+            <a href="#" class="service-btn"><span>Faça um orçamento</span> <i class="bx bx-chevron-right"></i></a>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon"><i class="icofont-tag"></i></div>
             <h4 class="title"><a href="">Adesivos</a></h4>
             <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-            <a href="#contact" class="appointment-btn scrollto"><span class="d-none d-md-inline">Faça</span> um orçamento</a>
+            <a href="#" class="service-btn"><span>Faça um orçamento</span> <i class="bx bx-chevron-right"></i></a>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon"><i class="icofont-tag"></i></div>
             <h4 class="title"><a href="">Cartão de visita</a></h4>
             <p class="description">Textinho aleatório só para a caixa não fica vazia</p>
-            <a href="#contact" class="appointment-btn scrollto"><span class="d-none d-md-inline">Faça</span> um orçamento</a>
+            <a href="#" class="service-btn"><span>Faça um orçamento</span> <i class="bx bx-chevron-right"></i></a>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon"><i class="icofont-tag"></i></div>
             <h4 class="title"><a href="">Faixas</a></h4>
             <p class="description">Textinho aleatório só para a caixa não fica vazia</p>
-            <a href="#contact" class="appointment-btn scrollto"><span class="d-none d-md-inline">Faça</span> um orçamento</a>
+            <a href="#" class="service-btn"><span>Faça um orçamento</span> <i class="bx bx-chevron-right"></i></a>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon"><i class="icofont-tag"></i></div>
             <h4 class="title"><a href="">Banners</a></h4>
             <p class="description">Textinho aleatório só para a caixa não fica vazia</p>
-            <a href="#contact" class="appointment-btn scrollto"><span class="d-none d-md-inline">Faça</span> um orçamento</a>
+            <a href="#" class="service-btn"><span>Faça um orçamento</span> <i class="bx bx-chevron-right"></i></a>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon"><i class="icofont-tag"></i></div>
             <h4 class="title"><a href="">Cartazes</a></h4>
             <p class="description">Textinho aleatório só para a caixa não fica vazia</p>
-            <a href="#contact" class="appointment-btn scrollto"><span class="d-none d-md-inline">Faça</span> um orçamento</a>
+            <a href="#" class="service-btn"><span>Faça um orçamento</span> <i class="bx bx-chevron-right"></i></a>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon"><i class="icofont-tag"></i></div>
             <h4 class="title"><a href="">Folders</a></h4>
             <p class="description">Textinho aleatório só para a caixa não fica vazia</p>
-            <a href="#contact" class="appointment-btn scrollto"><span class="d-none d-md-inline">Faça</span> um orçamento</a>
+            <a href="#" class="service-btn"><span>Faça um orçamento</span> <i class="bx bx-chevron-right"></i></a>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon"><i class="icofont-tag"></i></div>
             <h4 class="title"><a href="">Folhetos</a></h4>
             <p class="description">Textinho aleatório só para a caixa não fica vazia</p>
-            <a href="#contact" class="appointment-btn scrollto"><span class="d-none d-md-inline">Faça</span> um orçamento</a>
+            <a href="#" class="service-btn"><span>Faça um orçamento</span> <i class="bx bx-chevron-right"></i></a>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon"><i class="icofont-tag"></i></div>
             <h4 class="title"><a href="">Artesanais</a></h4>
             <p class="description">Textinho aleatório só para a caixa não fica vazia</p>
-            <a href="#contact" class="appointment-btn scrollto"><span class="d-none d-md-inline">Faça</span> um orçamento</a>
+            <a href="#" class="service-btn"><span>Faça um orçamento</span> <i class="bx bx-chevron-right"></i></a>
           </div>
         </div>
 
@@ -313,7 +366,7 @@
                 <div class="info-box mt-4">
                   <i class="bx bx-phone-call"></i>
                   <h3>Telefone</h3>
-                  <p>55 11 94510 - 5879</p>
+                  <p>+55 (11) 94510 - 5879</p>
                 </div>
               </div>
             </div>
@@ -368,8 +421,13 @@
               <p>
                 Guarulhos - São Paulo
                 <br/>
-                <strong>Telefone:</strong> 55 11 94510 - 5879<br>
+                <strong>Telefone:</strong> +55 (11) 94510 - 5879<br>
                 <strong>E-mail:</strong> dumeiocriativa@gmail.com<br>
+                <strong> Horário de Atendimento: </strong>
+                <br/>
+                Segunda à sexta: das 8h às 17h
+                <br/>
+                Sábado: das 9h às 13h
               </p>
             </div>
           </div>

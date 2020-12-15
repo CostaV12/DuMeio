@@ -1,6 +1,12 @@
+/**
+* Template Name: Presento - v1.0.0
+* Template URL: https://bootstrapmade.com/presento-bootstrap-corporate-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
 
 /*--------------------------------------------------------------
-# Configuração geral do CSS
+# General
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
@@ -8,62 +14,16 @@ body {
 }
 
 a {
-  color: #ed008c;
+  color: #e4019d;
 }
 
 a:hover {
-  color: #ed008c;
+  color: #e76668;
   text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Roboto", sans-serif;
-}
-
-/*-------------------------------------------------------------------------------------------
-# E=COnfiguração da imagem de 'carregando' que aparece quando abre o site ou quando da um f5
---------------------------------------------------------------------------------------------*/
-#preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 9999;
-  overflow: hidden;
-  background: #fff;
-}
-
-#preloader:before {
-  content: "";
-  position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  border: 6px solid #ed008c;
-  border-top-color: #ecf8f9;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  -webkit-animation: animate-preloader 1s linear infinite;
-  animation: animate-preloader 1s linear infinite;
-}
-
-@-webkit-keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+  font-family: "Raleway", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -85,13 +45,13 @@ h1, h2, h3, h4, h5, h6 {
   width: 40px;
   height: 40px;
   border-radius: 4px;
-  background: #ed008c;
+  background: #e4019d;
   color: #fff;
   transition: all 0.4s;
 }
 
 .back-to-top i:hover {
-  background: #00adef;
+  background: #e35052;
   color: #fff;
 }
 
@@ -103,27 +63,6 @@ h1, h2, h3, h4, h5, h6 {
     transition-delay: 0 !important;
   }
 }
-
-/*--------------------------------------------------------------
-# CSS da barra superior
---------------------------------------------------------------*/
-#topbar {
-  background: #ed008c;
-  color: #fff;
-  height: 40px;
-  font-size: 16px;
-  font-weight: 600;
-  transition: all 0.5s;
-}
-
-#topbar.topbar-scrolled {
-  top: -40px;
-}
-
-#topbar i {
-  padding-right: 6px;
-}
-
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -131,42 +70,40 @@ h1, h2, h3, h4, h5, h6 {
   background: #fff;
   transition: all 0.5s;
   z-index: 997;
-  padding: 10px 0;
-  top: 10px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 992px) {
-  #header {
-    padding: 15px 0;
-  }
+  padding: 15px 0;
 }
 
 #header.header-scrolled {
-  top: 0;
+  padding: 12px 0;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 #header .logo {
-  font-size: 40px;
+  font-size: 38px;
   margin: 0;
   padding: 0;
   line-height: 1;
   font-weight: 600;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
 }
 
 #header .logo a {
-  color: #555555;
+  color: #111111;
+}
+
+#header .logo a span {
+  color: #e4019d;
 }
 
 #header .logo img {
-  max-height: 100px;
+  width: 80px;
+  height: 80px;
+  max-height: 80px;
 }
 
 @media (max-width: 992px) {
   #header {
-    top: 0;
+    padding: 12px 0;
   }
   #header .logo {
     font-size: 28px;
@@ -196,22 +133,21 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a {
   display: block;
   position: relative;
-  color: #555555;
+  color: #111111;
   transition: 0.3s;
-  font-size: 13px;
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: #ed008c;
+  color: #e4019d;
 }
 
 .nav-menu .drop-down ul {
   display: block;
   position: absolute;
-  left: 15px;
+  left: 14px;
   top: calc(100% + 30px);
   z-index: 99;
   opacity: 0;
@@ -236,13 +172,11 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu .drop-down ul a {
   padding: 10px 20px;
   font-size: 14px;
-  font-weight: 500;
   text-transform: none;
-  color: #194b4d;
 }
 
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
-  color: #ed008c;
+  color: #e4019d;
 }
 
 .nav-menu .drop-down > a:after {
@@ -285,26 +219,27 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* Appointment Button */
-.appointment-btn {
+/* Get Startet Button */
+.get-started-btn {
   margin-left: 25px;
-  background: #ed008c;
+  background: #e4019d;
   color: #fff;
   border-radius: 4px;
   padding: 8px 25px;
   white-space: nowrap;
   transition: 0.3s;
   font-size: 14px;
+  font-weight: 600;
   display: inline-block;
 }
 
-.appointment-btn:hover {
-  background: #ed008c;
+.get-started-btn:hover {
+  background: #111111;
   color: #fff;
 }
 
-@media (max-width: 768px) {
-  .appointment-btn {
+@media (max-width: 992px) {
+  .get-started-btn {
     margin: 0 48px 0 0;
     padding: 6px 18px;
   }
@@ -314,7 +249,7 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav-toggle {
   position: fixed;
   right: 15px;
-  top: 20px;
+  top: 15px;
   z-index: 9998;
   border: 0;
   background: none;
@@ -327,7 +262,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-toggle i {
-  color: #555555;
+  color: #111111;
 }
 
 .mobile-nav {
@@ -355,14 +290,14 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav a {
   display: block;
   position: relative;
-  color: #555555;
+  color: #111111;
   padding: 10px 20px;
   font-weight: 500;
   outline: none;
 }
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
-  color: #ed008c;
+  color: #e4019d;
   text-decoration: none;
 }
 
@@ -398,7 +333,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   position: fixed;
-  background: rgba(60, 60, 60, 0.6);
+  background: rgba(0, 0, 0, 0.6);
   overflow: hidden;
   display: none;
   transition: ease-in-out 0.2s;
@@ -416,7 +351,6 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav-active .mobile-nav-toggle i {
   color: #fff;
 }
-
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -426,6 +360,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: rgba(60, 60, 60, 0.8);
   overflow: hidden;
   position: relative;
+  background-size: cover;
 }
 
 #hero .carousel, #hero .carousel-inner, #hero .carousel-item, #hero .carousel-item::before {
@@ -448,9 +383,9 @@ h1, h2, h3, h4, h5, h6 {
 #hero .container {
   text-align: center;
   background: rgba(255, 255, 255, 0.9);
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin-bottom: 50px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-bottom: 200px;
   border-top: 4px solid #ed008c;
 }
 
@@ -460,12 +395,27 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 50px;
   }
 }
+#hero:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#hero h1 {
+  margin: 0px 0px 20px;
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+}
 
 #hero h2 {
-  color: #2f2f2f;
-  margin-bottom: 20px;
-  font-size: 36px;
-  font-weight: 700;
+  color: #fff;
+  margin: 20px 0px 20px;
+  font-size: 24px;
 }
 
 #hero p {
@@ -548,24 +498,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .btn-get-started {
-  font-family: "Roboto", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 14px 32px;
+  padding: 10px 30px;
   border-radius: 4px;
   transition: 0.5s;
-  line-height: 1;
+  margin-bottom: 100px;
   color: #fff;
-  -webkit-animation-delay: 0.8s;
-  animation-delay: 0.8s;
-  background: #ed008c;
+  background: #e4019d;
+  border: 2px solid #e4019d;
 }
 
 #hero .btn-get-started:hover {
-  background: #65c9cd;
+  background: transparent;
+  border-color: #fff;
 }
+
 
 @media (max-width: 992px) {
   #hero {
@@ -577,8 +528,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
-  #hero h2 {
+  #hero {
+    text-align: center;
+    padding-top: 58px;
+  }
+  #hero h1 {
     font-size: 28px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 
@@ -600,15 +559,13 @@ h1, h2, h3, h4, h5, h6 {
 section {
   padding: 60px 0;
   overflow: hidden;
-}
-
-.section-bg {
-  background-color: #f7fcfc;
+  position: relative;
 }
 
 .section-title {
   text-align: center;
   padding-bottom: 30px;
+  position: relative;
 }
 
 .section-title h2 {
@@ -626,7 +583,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #ed008c;
+  background: #e4019d;
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -635,41 +592,60 @@ section {
   margin-bottom: 0;
 }
 
+.section-bg {
+  padding: 120px 0;
+  color: #fff;
+}
+
+.section-bg:before {
+  content: "";
+  background: #1b1b1b;
+  position: absolute;
+  bottom: 60px;
+  top: 60px;
+  left: 0;
+  right: 0;
+  transform: skewY(-3deg);
+}
+
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
 .breadcrumbs {
-  padding: 20px 0;
-  background-color: #ecf8f9;
+  padding: 15px 0;
+  background: #432c42;
   min-height: 40px;
-  margin-top: 120px;
+  margin-top: 82px;
+  color: #fff;
 }
 
 @media (max-width: 992px) {
   .breadcrumbs {
-    margin-top: 70px;
+    margin-top: 57px;
   }
 }
 
 .breadcrumbs h2 {
-  font-size: 24px;
-  font-weight: 300;
-  margin: 0;
-}
-
-@media (max-width: 992px) {
-  .breadcrumbs h2 {
-    margin: 0 0 10px 0;
-  }
+  font-size: 28px;
+  font-weight: 500;
 }
 
 .breadcrumbs ol {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  padding: 0;
+  padding: 0 0 10px 0;
   margin: 0;
   font-size: 14px;
+}
+
+.breadcrumbs ol a {
+  color: #aaaaaa;
+}
+
+.breadcrumbs ol a:hover {
+  color: #fff;
+  transition: 0.3s;
 }
 
 .breadcrumbs ol li + li {
@@ -679,134 +655,257 @@ section {
 .breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
-  color: #6c757d;
+  color: #e4019d;
   content: "/";
 }
 
-@media (max-width: 768px) {
-  .breadcrumbs .d-flex {
-    display: block !important;
-  }
-  .breadcrumbs ol {
-    display: block;
-  }
-  .breadcrumbs ol li {
-    display: inline-block;
-  }
-}
-
-
 /*--------------------------------------------------------------
-# Cta
+# Clients
 --------------------------------------------------------------*/
-.cta {
-  background: #ed008c;
-  color: #fff;
-  background-size: cover;
-  padding: 60px 0;
+.clients .owl-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
 }
 
-.cta h3 {
-  font-size: 28px;
-  font-weight: 700;
+.clients .owl-item img {
+  width: 60%;
+  opacity: 0.5;
+  transition: 0.3s;
+  -webkit-filter: grayscale(100);
+  filter: grayscale(100);
 }
 
-.cta .cta-btn {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
+.clients .owl-item img:hover {
+  opacity: 1;
+  -webkit-filter: none;
+  filter: none;
+}
+
+.clients .owl-nav, .clients .owl-dots {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.clients .owl-dot {
   display: inline-block;
-  padding: 10px 35px;
-  border-radius: 25px;
-  transition: 0.5s;
-  margin-top: 10px;
-  border: 2px solid #fff;
-  color: #fff;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd !important;
 }
 
-.cta .cta-btn:hover {
-  background: #fff;
-  color: #3fbbc0;
+.clients .owl-dot.active {
+  background-color: #e4019d !important;
 }
 
 /*--------------------------------------------------------------
-# About Us
+# About
 --------------------------------------------------------------*/
+.about .container {
+  position: relative;
+  z-index: 10;
+}
+
+.about .content {
+  padding: 30px 30px 30px 0;
+}
+
 .about .content h3 {
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+
+.about .content p {
+  margin-bottom: 30px;
+}
+
+.about .content .about-btn {
+  padding: 8px 30px 9px 30px;
+  color: #fff;
+  border-radius: 50px;
+  transition: 0.3s;
+  text-transform: uppercase;
   font-weight: 600;
-  font-size: 26px;
+  font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+  border: 2px solid #e4019d;
 }
 
-.about .content ul {
-  list-style: none;
-  padding: 0;
+.about .content .about-btn i {
+  font-size: 16px;
+  padding-left: 5px;
 }
 
-.about .content ul li {
-  padding-bottom: 10px;
+.about .content .about-btn:hover {
+  background: #e35052;
+  background: #e4019d;
 }
 
-.about .content ul i {
+.about .icon-boxes .icon-box {
+  margin-top: 30px;
+}
+
+.about .icon-boxes .icon-box i {
+  font-size: 40px;
+  color: #e4019d;
+  margin-bottom: 10px;
+}
+
+.about .icon-boxes .icon-box h4 {
   font-size: 20px;
-  padding-right: 4px;
-  color: #ed008c;
+  font-weight: 700;
+  margin: 0 0 10px 0;
 }
 
-.about .content p:last-child {
-  margin-bottom: 0;
+.about .icon-boxes .icon-box p {
+  font-size: 15px;
+  color: #848484;
+}
+
+@media (max-width: 1200px) {
+  .about .content {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    text-align: center;
+  }
 }
 
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
 .counts {
-  padding-bottom: 30px;
+  padding-top: 80px;
 }
 
 .counts .count-box {
-  box-shadow: -10px -5px 40px 0 rgba(0, 0, 0, 0.1);
-  padding: 30px;
+  padding: 30px 30px 25px 30px;
   width: 100%;
+  position: relative;
+  text-align: center;
+  box-shadow: 0px 2px 35px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
 }
 
 .counts .count-box i {
-  display: block;
-  font-size: 30px;
-  color: #ed008c;
-  float: left;
+  position: absolute;
+  top: -27px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  background: #fff;
+  padding: 12px;
+  color: #e4019d;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
 }
 
 .counts .count-box span {
-  font-size: 42px;
-  line-height: 24px;
+  font-size: 36px;
   display: block;
   font-weight: 700;
-  color: #555555;
-  margin-left: 50px;
+  color: #111111;
 }
 
 .counts .count-box p {
-  padding: 30px 0 0 0;
+  padding: 0;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 14px;
 }
 
-.counts .count-box a {
+/*--------------------------------------------------------------
+# Tabs
+--------------------------------------------------------------*/
+.tabs .nav-tabs {
+  border: 0;
+}
+
+.tabs .nav-link {
+  border: 1px solid #b9b9b9;
+  padding: 15px;
+  transition: 0.3s;
+  color: #111111;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tabs .nav-link i {
+  padding-right: 15px;
+  font-size: 48px;
+}
+
+.tabs .nav-link h4 {
+  font-size: 18px;
   font-weight: 600;
-  display: block;
-  margin-top: 20px;
-  color: #7b7b7b;
-  font-size: 15px;
-  font-family: "Poppins", sans-serif;
-  transition: ease-in-out 0.3s;
+  margin: 0;
 }
 
-.counts .count-box a:hover {
-  color: #ed008c;
+.tabs .nav-link:hover {
+  color: #e4019d;
 }
 
+.tabs .nav-link.active {
+  background: #e4019d;
+  color: #fff;
+  border-color: #e4019d;
+}
+
+@media (max-width: 768px) {
+  .tabs .nav-link i {
+    padding: 0;
+    line-height: 1;
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 575px) {
+  .tabs .nav-link {
+    padding: 15px;
+  }
+  .tabs .nav-link i {
+    font-size: 24px;
+  }
+}
+
+.tabs .tab-content {
+  margin-top: 30px;
+}
+
+.tabs .tab-pane h3 {
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.tabs .tab-pane ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tabs .tab-pane ul li {
+  padding-bottom: 10px;
+}
+
+.tabs .tab-pane ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #e4019d;
+}
+
+.tabs .tab-pane p:last-child {
+  margin-bottom: 0;
+}
 
 /*--------------------------------------------------------------
 # Services
@@ -872,97 +971,27 @@ section {
   font-size: 14px;
 }
 
-/*--------------------------------------------------------------
-# Appointments
---------------------------------------------------------------*/
-.appointment .php-email-form {
-  width: 100%;
-}
-
-.appointment .php-email-form .form-group {
-  padding-bottom: 8px;
-}
-
-.appointment .php-email-form .validate {
-  display: none;
-  color: red;
-  margin: 0 0 15px 0;
-  font-weight: 400;
-  font-size: 13px;
-}
-
-.appointment .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.appointment .php-email-form .error-message br + br {
-  margin-top: 25px;
-}
-
-.appointment .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.appointment .php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-}
-
-.appointment .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
-}
-
-.appointment .php-email-form input, .appointment .php-email-form textarea, .appointment .php-email-form select {
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-  padding: 10px !important;
-}
-
-.appointment .php-email-form input:focus, .appointment .php-email-form textarea:focus, .appointment .php-email-form select:focus {
-  border-color: #3fbbc0;
-}
-
-.appointment .php-email-form input, .appointment .php-email-form select {
-  height: 44px;
-}
-
-.appointment .php-email-form textarea {
-  padding: 10px 12px;
-}
-
-.appointment .php-email-form button[type="submit"] {
-  background: #3fbbc0;
-  border: 0;
-  padding: 10px 35px;
-  color: #fff;
-  transition: 0.4s;
+.services .service-btn {
+  padding: 8px 30px 9px 30px;
+  color: black;
   border-radius: 50px;
+  transition: 0.3s;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+  border: 2px solid #e4019d;
 }
 
-.appointment .php-email-form button[type="submit"]:hover {
-  background: #ed008c;
+.services .service-btn i {
+  font-size: 16px;
+  padding-left: 5px;
+}
+
+.services .service-btn:hover {
+  background: #e35052;
+  background: #e4019d;
 }
 
 
@@ -993,7 +1022,7 @@ section {
 }
 
 .gallery .owl-dot.active {
-  background-color:  #00adef !important;
+  background-color:  #ed008c !important;
 }
 
 .gallery .gallery-carousel .owl-stage-outer {
@@ -1001,14 +1030,13 @@ section {
 }
 
 .gallery .gallery-carousel .center {
-  border: 6px solid #00adef;
+  border: 6px solid #ed008c;
   margin: -10px;
   box-sizing: content-box;
   padding: 4px;
   background: #fff;
   z-index: 1;
 }
-
 
 /*--------------------------------------------------------------
 # Contact
@@ -1022,10 +1050,10 @@ section {
 
 .contact .info-box i {
   font-size: 32px;
-  color: #3fbbc0;
+  color: #ed008c;
   border-radius: 50%;
   padding: 8px;
-  border: 2px dotted #c5ebec;
+  border: 2px dotted #ed008c;
 }
 
 .contact .info-box h3 {
@@ -1104,7 +1132,7 @@ section {
 }
 
 .contact .php-email-form input::focus, .contact .php-email-form textarea::focus {
-  background-color: #00adef;
+  background-color: #ed008c;
 }
 
 .contact .php-email-form input {
@@ -1116,7 +1144,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #00adef;
+  background: #ed008c;
   border: 0;
   padding: 10px 30px;
   color: #fff;
@@ -1125,7 +1153,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #00adef;
+  background: #ed008c;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1289,3 +1317,4 @@ section {
   text-align: center;
   font-size: 13px;
 }
+
