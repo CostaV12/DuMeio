@@ -2,16 +2,18 @@
 <html>
 
 <head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
- <title>Dumeiocriativa</title>
+  <title>Dumeiocriativa</title>
  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
  <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8"/>
  <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- fornece instruções ao navegador sobre como controlar as dimensões e a escala da página --> 
  <meta name = "description" content = "Dumeiocriativa"/>
  <meta name = "author" content = "Nathalia Assunção das Chagas"/>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+ <!-- Google Fonts -->
+ <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
  <!-- Arquivo CSS (está dentro da pasta assents/css) -->
  <link href="assets/css/style.css" rel="stylesheet">
@@ -31,42 +33,47 @@
 
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
-  <link rel="shortcut icon" type="Image/x-icon" href="assets/img/Logo dumeio_png2.png"/>
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/icon.png">
 
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+ 
 </head>
 
 <body>
 
-  <!-- ======= Barra do início da página que mostra o horário de funcionamento e o telefone ======= -->
-  <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
-      <div class="d-flex align-items-center">
-        <i class="icofont-clock-time"></i> Segunda à sexta, das 08h00 às 18h00.
-      </div>
-      <div class="d-flex align-items-center">
-        <i class="icofont-phone"></i> (11) 94510 - 5879
+ <!-- ======= Menu (header) ======= -->
+ <header id="header" class="fixed-top">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-xl-10 d-flex align-items-center">
+        <h1 class="logo mr-auto"><img src="assets/img/Logo_dumeio.png" alt=""><a href="index.html">  Dumeiocriativa<span>.</span></a></h1>
+        
+
+        <nav class="nav-menu d-none d-lg-block">
+          <ul>
+            <li class="active"><a href="#header">Home</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#gallery">Portifolio</a></li>
+          </ul>
+        </nav><!-- .nav-menu -->
+
+        <a href="#contact" class="get-started-btn scrollto">Orçamento</a>
       </div>
     </div>
-  </div> <!-- =======Fim do código da barra superior======= -->
- 
-  <!-- ======= Código do menu ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center">
 
-      <a href="index.html" class="logo mr-auto"><img src="assets/img/Logo dumeio_png2.png" alt=""></a> <!-- logo que aparece no menu -->
-      <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="index.html">Home</a></li> <!-- o active faz com que a página home seja a principal quando carregar o site-->
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#services">Serviços</a></li>
-
-        </ul>
-      </nav><!-- fim da tag nav -->
-
-      <a href="#contact" class="appointment-btn scrollto"><span class="d-none d-md-inline">Fale</span> Conosco</a> <!-- Essa classe deixa o botão de 'fale conosco' diferenciado dos demais-->
-
-    </div>
-  </header><!-- =======Fim do código do menu ======= -->
+  </div>
+</header><!-- End Header -->
 
   <!-- ======= Código da sessão principal - sessão home (hero)/ carrousel ======= -->
   <section id="hero">
@@ -78,28 +85,52 @@
 
         <!-- Slide 1 -->
         <div class="carousel-item active" style="background-image: url(assets/img/1.png)"> <!-- carrousel -->
-          <div class="container">
-            <h2>Bem-vindo(a) a <span>Dumeiocriativa</span></h2>
-            <p>Visualize nossos produtos e peça agora o orçamento.</p>
-            <a href="#about" class="btn-get-started scrollto">Conheça</a> <!-- botão que leva para a sessão sobre-->
+          <div class="container-fluid" data-aos="zoom-out" data-aos-delay="100">
+            <div class="row justify-content-center">
+              <div class="col-xl-10">
+                <div class="row">
+                  <div class="col-xl-5">
+                    <h1>Bem-vindo(a) a <span>Dumeiocriativa</span></h2>
+                    <h2>Conheça quem somos e um pouco do que fazemos</h2>
+                    <a href="#sobre" class="btn-get-started scrollto">Saiba mais</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
         <!-- Slide 2 -->
         <div class="carousel-item" style="background-image: url(assets/img/2.png)"> <!-- carrousel -->
-          <div class="container">
-            <h2>Serviços prestados</h2>
-            <p>Confira nosso catálogo para ter acesso aos nossos serviços e produtos. </p>
-            <a href="#services" class="btn-get-started scrollto">Nossos serviços</a> <!-- botão que leva para a sessão 'serviços'-->
+          <div class="container-fluid" data-aos="zoom-out" data-aos-delay="100">
+            <div class="row justify-content-center">
+              <div class="col-xl-10">
+                <div class="row">
+                  <div class="col-xl-5">
+                    <h1>Conheça nossas Redes Sociais</h2>
+                    <h2>Conheça um pouco mais da nossa equipe visitando nossas redes sociais</h1>
+                    <a href="https://linktr.ee/dumeiocriativa" class="btn-get-started scrollto">Visite</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
         <!-- Slide 3 -->
         <div class="carousel-item" style="background-image: url(assets/img/3.png)">
-          <div class="container">
-            <h2>Trabalho com excelência e qualidade</h2>
-            <p>Usamos material de qualidade e com rápida entrega</p>
-            <a href="#gallery" class="btn-get-started scrollto">Conheça nossos produtos</a> <!-- botão que leva para a sessão 'galeria'-->
+          <div class="container-fluid" data-aos="zoom-out" data-aos-delay="100">
+            <div class="row justify-content-center">
+              <div class="col-xl-10">
+                <div class="row">
+                  <div class="col-xl-5">
+                    <h1>Em Breve</h2>
+                    <h2>Logo mais estaremos disponibilizando compras pelo nosso site!</h1>
+                    <a href="#contact" class="btn-get-started scrollto">Faça um orçamento</a> <!-- botão que leva para a sessão 'orçamento'-->
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -107,7 +138,7 @@
 
       <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon icofont-simple-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>/
+        <span class="sr-only">Previous</span>
       </a>
 
       <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
@@ -118,48 +149,87 @@
     </div>
   </section><!-- =======Fim do código do carrousel======= -->
 
+
   <main id="main">
 
-    <!-- ======= Código da sessão 'sobre nós'======= -->
-    <section id="about" class="about">
+  <!-- ======= Código da sessão 'sobre nós'======= -->
+  <section id="about" class="about">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Sobre Nós</h2>
+        <p> A DuMeio é uma empresa que fornece produtos gráficos com um ótimo design</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6" data-aos="fade-right">
+          <img src="assets/img/Logo_dumeio.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <h3>DuMeio: o seu produto com o melhor design</h3>
+          <p>
+            A DuMeio nasceu em 2020 como uma empresa que atende serviços e produtos personalizados com um ótimo design e com alta qualidade.
+          </p>
+        
+          
+        </div>
+      </div>
+
+    </div>
+  </section><!-- ======= Fim da sessão sobre nós ======= -->
+
+    <!-- ======= sobre Section ======= -->
+    <section id="sobre" class="about section-bg">
       <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
-          <h2>Sobre Nós</h2>
-          <p> A DuMeio é uma empresa que fornece produtos gráficos com um ótimo design</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-right">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+        <div class="row no-gutters">
+          <div class="content col-xl-5 d-flex align-items-stretch">
+            <div class="content">
+              <h3>Conheça alguns dos conceitos que seguimos</h3>
+              <p>
+                Apenas um textinho aleatório para o campo não ficar vazio
+              </p>
+              <a href="#" class="about-btn"><span>Sobre nós</span> <i class="bx bx-chevron-right"></i></a>
+            </div>
           </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>DuMeio: o seu produto com o melhor design</h3>
-            <p>
-              A DuMeio nasceu em 2020 como uma empresa que atende serviços e produtos personalizados com um ótimo design e com alta qualidade.
-            </p>
-            <p>Missão</p>
-            <ul>
-              <li><i class="icofont-check-circled"></i> Fornecer produtos gráficos de ótima qualidade e um design que atende as demandas de nossos clientes. Procuramos sempre entregar nossos produtos no menor tempo possível. </li>
-            </ul>
-            <p>Visão</p>
-            <ul>
-              <li><i class="icofont-check-circled"></i> Ser a melhor empresa gráfiaca de Guarulhos que entrega produtos e serviços gráficos persnoalizados </li> <!-- essa classe deixa um ícone de 'check', achei isso bem legal para citar a visão e os valores-->
-
-            </ul>
-            <p>Valores</p>
-            <ul>
-              <li><i class="icofont-check-circled"></i> Ética</li> 
-              <li><i class="icofont-check-circled"></i> Rapidez</li>
-              <li><i class="icofont-check-circled"></i> Qualidade</li>
-              <li><i class="icofont-check-circled"></i> Bom antendimento</li>
-            </ul>
-            
+          <div class="col-xl-7 d-flex align-items-stretch">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <i class="icofont-favourite"></i>
+                  <h4>Nosso Diferencial</h4>
+                  <i class="icofont-check-circled"></i>Fazemos entregas rápidas, produtos de qualidade e focamos sempre no melhor design para os nossos clientes
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                  <i class="icofont-bullseye"></i>
+                  <h4>Missão</h4>
+                  <i class="icofont-check-circled"></i> Fornecer produtos gráficos de ótima qualidade e um design que atende as demandas de nossos clientes. Procuramos sempre entregar nossos produtos no menor tempo possível. </li>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <i class="icofont-eye"></i>
+                  <h4>Visão</h4>
+                  <i class="icofont-check-circled"></i> Ser a melhor empresa gráfiaca de Guarulhos que entrega produtos e serviços gráficos persnoalizados
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bx bx-shield"></i>
+                  <h4>Valores</h4>
+                  <ul>
+                    <i class="icofont-check-circled"></i> Ética
+                    <br/>
+                    <i class="icofont-check-circled"></i> Rapidez
+                    <br/>
+                    <i class="icofont-check-circled"></i> Qualidade
+                    <br/>
+                    <i class="icofont-check-circled"></i> Bom antendimento
+                  </ul>
+                </div>
+              </div>
+            </div><!-- End .content-->
           </div>
         </div>
 
       </div>
-    </section><!-- ======= Fim da sessão sobre nós ======= -->
+    </section><!-- End About Section -->
 
     <!-- ======= Código da sessão 'serviços' ======= -->
     <section id="services" class="services services">
@@ -250,36 +320,41 @@
       </div>
     </section><!-- ======= Fim da sessão 'serviços'' ======= -->
 
-    <!-- ======= Código da galeria de imagens dos produtos ======= -->
-    <section id="gallery" class="gallery">
-      <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
-          <h2>Galeria</h2>
-          <p>Conheça um pouco mais sobre nosso produtos e serviços.</p>
+     <!-- ======= Código da galeria de imagens dos produtos ======= -->
+     <section class="about section-bg">
+      <section id="gallery" class="gallery">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-title">
+            <h2>Galeria</h2>
+            <p>Conheça um pouco mais sobre nosso produtos e serviços.</p>
+          </div>
+  
+          <div class="owl-carousel gallery-carousel" data-aos="fade-up" data-aos-delay="100">
+            <a href="assets/img/gallery/gallery-1.png" class="venobox" data-gall="gallery-carousel"><img src="assets/img/gallery/gallery-1.png" alt=""></a>
+            <a href="assets/img/gallery/gallery-6.png" class="venobox" data-gall="gallery-carousel"><img src="assets/img/gallery/gallery-6.png" alt=""></a>
+            <a href="assets/img/gallery/gallery-7.png" class="venobox" data-gall="gallery-carousel"><img src="assets/img/gallery/gallery-7.png" alt=""></a>
+            <a href="assets/img/gallery/gallery-8.png" class="venobox" data-gall="gallery-carousel"><img src="assets/img/gallery/gallery-8.png" alt=""></a>
+            <a href="assets/img/gallery/gallery-9.png" class="venobox" data-gall="gallery-carousel"><img src="assets/img/gallery/gallery-9.png" alt=""></a>
+            <a href="assets/img/gallery/gallery-10.png" class="venobox" data-gall="gallery-carousel"><img src="assets/img/gallery/gallery-10.png" alt=""></a>
+            <a href="assets/img/gallery/gallery-11.png" class="venobox" data-gall="gallery-carousel"><img src="assets/img/gallery/gallery-11.png" alt=""></a>
+            <a href="assets/img/gallery/gallery-12.png" class="venobox" data-gall="gallery-carousel"><img src="assets/img/gallery/gallery-12.png" alt=""></a>
+          </div>
+  
         </div>
-
-        <div class="owl-carousel gallery-carousel" data-aos="fade-up" data-aos-delay="100">
-          <a href="assets/img/gallery/gallery-1.jpg" class="venobox" data-gall="gallery-carousel"><img src="assets/img/gallery/gallery-1.jpg" alt=""></a>
-          <a href="assets/img/gallery/gallery-6.jpg" class="venobox" data-gall="gallery-carousel"><img src="assets/img/gallery/gallery-6.jpg" alt=""></a>
-          <a href="assets/img/gallery/gallery-7.jpg" class="venobox" data-gall="gallery-carousel"><img src="assets/img/gallery/gallery-7.jpg" alt=""></a>
-          <a href="assets/img/gallery/gallery-8.jpg" class="venobox" data-gall="gallery-carousel"><img src="assets/img/gallery/gallery-8.jpg" alt=""></a>
-          <a href="assets/img/gallery/gallery-8.jpg" class="venobox" data-gall="gallery-carousel"><img src="assets/img/gallery/gallery-9.jpg" alt=""></a>
-          <a href="assets/img/gallery/gallery-8.jpg" class="venobox" data-gall="gallery-carousel"><img src="assets/img/gallery/gallery-10.jpg" alt=""></a>
-          <a href="assets/img/gallery/gallery-8.jpg" class="venobox" data-gall="gallery-carousel"><img src="assets/img/gallery/gallery-11.jpg" alt=""></a>
-        </div>
-
-      </div>
+      </section><!-- ======= Fim da sessão 'galeria' ======= -->
     </section><!-- ======= Fim da sessão 'galeria' ======= -->
 
+    
 
     <!-- ======= Código da sessão 'contato' ======= -->
     <section id="contact" class="contact">
       <div class="container">
 
         <div class="section-title">
-          <h2>Contato</h2>
-          <p>Entre em contato conosco e deixe-nos sua mensagem</p>
+          <h2>Orçamento</h2>
+          <p>Entre em contato conosco e faça um orçamento</p>
         </div>
 
       </div>
@@ -396,7 +471,7 @@
     </div>
   </footer><!-- ======= Fim do código de rodapé ======= -->
 
-  <div id="preloader"></div>
+
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
   <!-- Vendor JS Files -->
@@ -404,9 +479,10 @@
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
   <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
   <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/venobox/venobox.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
 
